@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Rethinker';
+  src: url('/src/assets/fonts/Rethinker Slant.ttf') format('truetype'),
+       url('/src/assets/fonts/Rethinker%20Slant.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iCiel La Chic';
+  src: url('/src/assets/fonts/iCiel LaChicProShaded.otf') format('opentype'),
+       url('/src/assets/fonts/iCiel%20LaChicProShaded.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --font-bevietnam: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-jetbrains: 'JetBrains Mono', monospace;
+    --font-lora: 'Lora', 'Source Serif 4', Georgia, serif;
+    --font-sourceserif: 'Source Serif 4', 'Lora', Georgia, serif;
+    --font-jakarta: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-montserrat: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-lexend: 'Lexend', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-lachic: 'iCiel La Chic', 'iCielLaChic', 'Playfair Display', 'Cinzel Decorative', 'Italiana', Georgia, serif;
+    --font-rethinker: 'Rethinker', 'Syne', 'Plus Jakarta Sans', 'Outfit', -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-bevietnam);
+  }
+
+  .font-lachic {
+    font-family: var(--font-lachic);
+  }
+
+  .font-rethinker {
+    font-family: var(--font-rethinker);
+  }
+
+  .font-bevietnam {
+    font-family: var(--font-bevietnam);
+  }
+
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+
+  .font-jetbrains {
+    font-family: var(--font-jetbrains);
+  }
+
+  .font-lora {
+    font-family: var(--font-lora);
+  }
+
+  .font-sourceserif {
+    font-family: var(--font-sourceserif);
+  }
+
+  .font-jakarta {
+    font-family: var(--font-jakarta);
+  }
+
+  .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
+
+  .font-lexend {
+    font-family: var(--font-lexend);
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-slide {
+    page-break-after: always;
+    break-after: page;
+    height: 100vh !important;
+    width: 100vw !important;
+  }
+}
+
+/* Presentation Laser Pointer */
+.laser-pointer-cursor {
+  cursor: crosshair;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+
